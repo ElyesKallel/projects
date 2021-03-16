@@ -1,0 +1,24 @@
+.header .header__projekt3 {
+    height: 450px;
+}
+
+.header__projekt3 .header__texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+    background: url('../bild/time.png') center no-repeat;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.projekt__inthalt {
+    text-align: center;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}

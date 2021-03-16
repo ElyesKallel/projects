@@ -1,0 +1,52 @@
+.header .header__projekt1 {
+    height: 450px;
+}
+
+.header__projekt1 .header__texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+    background: url('../bild/puzzle.jpg') center no-repeat;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.projekt__inthalt {
+    text-align: center;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+div.stein {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    float: left;
+    border: solid 1px #555;
+    border-radius: 5px 5px;
+    background: #ccc;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#border {
+    position: relative;
+    margin: auto;
+    width: 258px;
+    height: 258px;
+    background: #EcB23F;
+    border: solid 4px #95731C;
+    outline: double 5px #6D2519;
+}
+
+.footer {
+    margin-top: 15px;
+    margin-right: 170px;
+    font-size: 15px;
+}

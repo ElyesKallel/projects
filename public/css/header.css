@@ -1,0 +1,141 @@
+﻿.header {
+    height: 450px;
+    width: 100%;
+    background-color: dimgrey;
+    position: relative;
+}
+
+.header__texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+    background: url('../bild/startup.jpg') center no-repeat;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.header__mask {
+    position: absolute;
+    bottom: 0;
+    background: 0 0;
+    height: 42px;
+    width: 100%;
+    z-index: 10;
+}
+
+.header__navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navbar--logo-title {
+    color: white;
+    font-size: 28px;
+    margin-left: 5px;
+}
+
+.header__navbar--menu-link {
+    color: white;
+    margin-left: 40px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.header__slogan {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.h__slogan--title {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Anton';
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.h__slogan--btn {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px 20px;
+    background: #e67e22;
+    border-radius: 5px;
+}
+
+.header__navbar--toogle {
+    width: 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+
+.header__navbar--toogle-icons,
+.header__navbar--toogle-icons:before,
+.header__navbar--toogle-icons:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    margin-right: 5px;
+}
+
+.header__navbar--toogle-icons:before {
+    top: 10px;
+}
+
+.header__navbar--toogle-icons:after {
+    top: -14px;
+}
+
+.is-open .header__navbar--menu {
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .header__navbar--toogle {
+        display: flex;
+        z-index: 1000;
+    }
+
+    .header__navbar--menu {
+        transition: all 0.3s ease-in-out;
+        transform: translateY(-100%);
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;*/
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        height: 400vh;
+        background: #e67e22;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    .header__navbar--menu-link {
+        /*margin: 20px 0;*/
+        font-size: 24px;
+        margin-top: 100px;
+        margin-right: 70px;
+    }
+}
